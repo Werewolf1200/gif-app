@@ -16,7 +16,9 @@ export const GifGrid = ({ category }) => {
         <div className='card-grid'>
           {
             images.map((image) => (
-              <GifItem 
+              <GifItem
+                title={image.title}
+                url={image.url}
                 key={image.id}
                 {...image}// Expandir props
               />
